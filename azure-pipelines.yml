@@ -69,7 +69,7 @@ stages:
   displayName: 'Deploy the web application to QA'
   dependsOn: Build
   jobs:
-  - deployment: Deploy-QA
+  - deployment: DeployQA
     pool:
       vmImage: 'ubuntu-18.04'
     environment: qa
@@ -92,7 +92,7 @@ stages:
   displayName: 'Deploy the web application to Prod'
   dependsOn: QA
   jobs:
-  - deployment: Deploy-Prod
+  - deployment: DeployProd
     pool:
       vmImage: 'ubuntu-18.04'
     environment: prod
