@@ -38,8 +38,6 @@ stages:
     - bash: echo $A  
       displayName: 'echo $A' 
 
-    - script: echo $VAR2
-      displayName: 'echo $VAR2'
     - task: UseDotNet@2
       displayName: 'Use .NET Core SDK $(dotnetSdkVersion)'
       inputs:
