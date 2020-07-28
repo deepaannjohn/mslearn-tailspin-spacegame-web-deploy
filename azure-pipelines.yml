@@ -39,9 +39,11 @@ stages:
       inputs:
         verbose: false
 
+
     - script: echo $(var1)
       displayName: 'Do something'
-      
+
+  
     - script: './node_modules/.bin/node-sass $(wwwrootDir) --output $(wwwrootDir)'
       displayName: 'Compile Sass assets'
 
