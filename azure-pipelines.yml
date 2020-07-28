@@ -40,7 +40,7 @@ stages:
         verbose: false
 
 
-    - script: echo $(var1)
+    - script: echo $VAR2
       displayName: 'Do something'
 
     
