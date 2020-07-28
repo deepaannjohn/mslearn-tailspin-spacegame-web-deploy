@@ -43,6 +43,9 @@ stages:
     - script: echo $(var1)
       displayName: 'Do something'
 
+    - script: echo ${{var2}}
+      displayName: 'Do something again'
+
   
     - script: './node_modules/.bin/node-sass $(wwwrootDir) --output $(wwwrootDir)'
       displayName: 'Compile Sass assets'
