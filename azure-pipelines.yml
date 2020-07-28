@@ -94,6 +94,8 @@ stages:
       runOnce:
         deploy:
           steps:
+          - script: echo $(Test)
+            displayName: 'Do something'
           - download: current
             artifact: drop
           - task: AzureWebApp@1
