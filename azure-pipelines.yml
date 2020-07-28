@@ -39,7 +39,7 @@ stages:
       inputs:
         verbose: false
 
-    - script: echo $(Test)
+    - script: echo $(var1)
       displayName: 'Do something'
       
     - script: './node_modules/.bin/node-sass $(wwwrootDir) --output $(wwwrootDir)'
